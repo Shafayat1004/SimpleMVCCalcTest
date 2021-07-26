@@ -29,18 +29,20 @@ public class Controller {
     @FXML
     void addClicked(ActionEvent event) {
         int xVal = Integer.parseInt(xTextField.getText()), yVal = Integer.parseInt(yTextField.getText());
-        //CalcModel.add2Vals(xVal, yVal);
+        CalcModel.add2Vals(xVal, yVal);
         //resultLabel= new Label();
-        resultLabel.setText(Integer.toString(xVal+yVal));
+        resultLabel.setText(Integer.toString(CalcModel.getCalcValue()));
+       // xTextField.clear(); yTextField.clear();
         
     }
 
     @FXML
     void multiplyClicked(ActionEvent event) {
         int xVal = Integer.parseInt(xTextField.getText()), yVal = Integer.parseInt(yTextField.getText());
-        //CalcModel.multiply2Vals(xVal, yVal);
+        CalcModel.multiply2Vals(xVal, yVal);
         //resultLabel= new Label();
-        resultLabel.setText(Integer.toString(xVal*yVal));
+        resultLabel.setText(Integer.toString(CalcModel.getCalcValue()));
+        //xTextField.clear(); yTextField.clear();
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
