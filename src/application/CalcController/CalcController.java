@@ -1,4 +1,4 @@
-package CalcController;
+package application.CalcController;
 
 import java.net.URL;
 import java.util.ResourceBundle;

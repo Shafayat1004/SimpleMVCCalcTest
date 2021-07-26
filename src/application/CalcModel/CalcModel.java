@@ -1,4 +1,4 @@
-package CalcModel;
+package application.CalcModel;
 
 public class CalcModel {
     private int calcValue;

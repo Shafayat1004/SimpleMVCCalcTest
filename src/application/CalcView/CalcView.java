@@ -1,4 +1,4 @@
-package CalcView;
+package application.CalcView;
 
 public class CalcView {
     
