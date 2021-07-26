@@ -5,13 +5,12 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalcViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <TextField layoutX="226.0" layoutY="88.0" promptText="Enter X here" fx:id="xTextField" />
       <TextField fx:id="yTextField" layoutX="226.0" layoutY="139.0" promptText="Enter Y here" />
       <Button layoutX="226.0" layoutY="181.0" mnemonicParsing="false" onAction="#addClicked" text="Add" />
       <Button layoutX="316.0" layoutY="181.0" mnemonicParsing="false" onAction="#multiplyClicked" text="Multiply" />
-      <Label layoutX="226.0" layoutY="224.0" prefHeight="18.0" prefWidth="150.0" text="Result: " />
+      <Label fx:id="resultLabel" layoutX="226.0" layoutY="224.0" prefHeight="18.0" prefWidth="150.0" text="Result: " />
    </children>
 </AnchorPane>

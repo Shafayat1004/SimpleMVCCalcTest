@@ -1,12 +1,15 @@
 package application.CalcModel;
 
 public class CalcModel {
-    private int calcValue;
+    private static Double calcValue;
 
-	public int getCalcValue() {
+	public static Double getCalcValue() {
 		return calcValue;
 	}
-    public void add2Vals(int n1, int n2) {
+    public static void add2Vals(Double n1, Double n2) {
+        calcValue = n1+n2;
+    }
+    public static void multiply2Vals(Double n1, Double n2) {
         calcValue = n1+n2;
     }
 }
